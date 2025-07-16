@@ -17,6 +17,7 @@ buttons.addEventListener("click", function startRound(event){
 let roundResultDiv = document.querySelector('.round-result')
 let result = document.createElement('p')
 let finalResultDiv = document.querySelector('.final-result')
+let restartContainer = document.querySelector('.restart-container')
 
 
 let userScore = 0;
@@ -41,8 +42,11 @@ function endGame(winner) {
         finalResultDiv.classList.add('computer-winner');
     }
     
+    // Add winner declaration to the colored box
     finalResultDiv.appendChild(winnerDeclare)
-    finalResultDiv.appendChild(restart)
+    
+    // Add restart button outside the colored box
+    restartContainer.appendChild(restart)
 }
 
 function playRound(userChoice, computerChoice, endGame) {

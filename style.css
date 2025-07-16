@@ -32,7 +32,7 @@ button {
     font-size: 16px;
     padding: 10px 20px;
     transition: all 0.2s ease;
-    background: transparent;
+    background: #000;
     border: 1px solid #333;
     color: #fff;
     cursor: pointer;
@@ -44,6 +44,29 @@ button {
 button:hover {
     background: #222;
     border-color: #555;
+    transform: translateY(-2px);
+}
+
+/* Ensure restart button has same styling */
+.final-result button {
+    border-radius: 6px;
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+    background: #000;
+    border: 1px solid #333;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.final-result button:hover {
+    background: #222;
+    border-color: #555;
+    transform: translateY(-2px);
 }
 
 .round-result {
@@ -123,6 +146,34 @@ button:hover {
 
 .final-result.computer-winner h2 {
     color: #e74c3c;
+}
+
+/* Restart Container */
+.restart-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.restart-container button {
+    border-radius: 6px;
+    margin: 0;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+    background: #000;
+    border: 1px solid #333;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.restart-container button:hover {
+    background: #222;
+    border-color: #555;
+    transform: translateY(-2px);
 }
 
 /* Responsive Design */
