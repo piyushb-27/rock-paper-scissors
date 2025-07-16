@@ -1,34 +1,62 @@
-# Rock Paper Scissors - JavaScript Console Game
+# Rock Paper Scissors - Interactive Web Game
 
-This is a simple implementation of the classic **Rock, Paper, Scissors** game built with JavaScript as part of the **Odin Project - Foundations Curriculum**.
+This is a modern implementation of the classic **Rock, Paper, Scissors** game built with JavaScript, HTML, and CSS as part of the **Odin Project - Foundations Curriculum**.
 
-The game runs entirely in the **browser console** using `prompt()` and `alert()` for input and output.
+The game features a **sleek dark theme UI** with interactive buttons, dynamic result displays, and smooth animations for an engaging user experience.
 
 ---
 
 ## 🚀 Features
 
-- Play 5 rounds of Rock, Paper, Scissors against the computer.
-- Computer makes random selections each round.
-- Score is tracked and displayed after each round.
-- Final score summary after all rounds.
-- Handles input in any casing (e.g. `RoCK`, `paper`, etc.)
+- **Interactive UI**: Click buttons to make your choice instead of console prompts
+- **Dark Theme**: Elegant black background with minimal design
+- **Real-time Score Tracking**: Live score updates after each round
+- **Dynamic Result Display**: Color-coded results (Green for wins, Red for losses, Yellow for ties)
+- **Responsive Design**: Works on desktop and mobile devices
+- **Smooth Animations**: Subtle transitions and hover effects
+- **Game State Management**: Proper game flow from start to finish
+- **Restart Functionality**: Easy game restart with a single click
 
 ---
 
 ## 🔗 Live Demo
 
-[Click here to play the game](https://piyushb-27.github.io/rock-paper-scissors/)  
-_(Make sure to open your browser's **console** before playing.)_
+[Click here to play the game](https://piyushb-27.github.io/rock-paper-scissors/)
 
 ---
 
 ## 🧠 Concepts Used
 
-- Functions and function calls
-- DOM interaction via `prompt()` and `alert()`
-- Conditionals (`if-else`)
-- Loops (`for`)
-- String manipulation (`toLowerCase()`, `charAt()`, `slice()`)
-- Switch statement
-- Random number generation with `Math.random()`
+### **JavaScript Core Concepts:**
+- **Functions** and function calls
+- **Event Handling** (`addEventListener`)
+- **Event Delegation** (using `event.target.id`)
+- **DOM Manipulation** (`createElement`, `appendChild`, `innerHTML`)
+- **DOM Selectors** (`querySelector`, `getElementById`)
+- **Conditionals** (`if-else` statements)
+- **Loops** and iteration
+- **Switch statements**
+- **Random number generation** (`Math.random()`)
+- **Array/Object manipulation**
+- **Variable scope** (global vs local)
+
+### **DOM & UI Concepts:**
+- **Dynamic HTML Creation** (creating elements with JavaScript)
+- **CSS Class Manipulation** (`classList.add`, `classList.remove`)
+- **Element Styling** (dynamic style changes)
+- **Event-driven Programming**
+- **State Management** (tracking game state)
+- **Conditional Rendering** (showing/hiding elements)
+
+### **CSS & Design Concepts:**
+- **CSS Grid/Flexbox** for layout
+- **CSS Transitions** and animations
+- **Hover Effects** and interactive states
+- **Responsive Design** with media queries
+- **CSS Custom Properties** and theming
+- **Typography** and font styling
+- **Color Theory** (dark theme implementation)
+- **Box Model** and spacing
+
+
+---
