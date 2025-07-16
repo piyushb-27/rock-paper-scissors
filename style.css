@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 60px 20px 20px;
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.buttons {
+    margin-bottom: 40px;
+}
+
+button {
+    border-radius: 6px;
+    margin: 0 8px;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+    background: transparent;
+    border: 1px solid #333;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background: #222;
+    border-color: #555;
+}
+
+.round-result {
+    padding: 20px 30px;
+    margin: 20px;
+    border-radius: 15px;
+    background: #111;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    min-height: 60px;
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    min-width:300px;
+}
+
+.final-result {
+    padding: 30px 40px;
+    margin: 20px;
+    border-radius: 15px;
+    background: #111;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    min-height: 100px;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 500px;
+}
+
+/* Show when active */
+.round-result.active {
+    display: flex;
+}
+
+.final-result.active {
+    display: flex;
+}
+
+/* Simple Win/Lose Effects */
+.round-result.win {
+    background: rgba(46, 204, 113, 0.2);
+    border-left: 4px solid #2ecc71;
+    color: #2ecc71;
+}
+
+.round-result.lose {
+    background: rgba(231, 76, 60, 0.2);
+    border-left: 4px solid #e74c3c;
+    color: #e74c3c;
+}
+
+.round-result.tie {
+    background: rgba(241, 196, 15, 0.2);
+    border-left: 4px solid #f1c40f;
+    color: #f1c40f;
+}
+
+/* Final result colors based on winner */
+.final-result.user-winner {
+    background: rgba(46, 204, 113, 0.2);
+    border: 2px solid #2ecc71;
+}
+
+.final-result.user-winner h2 {
+    color: #2ecc71;
+}
+
+.final-result.computer-winner {
+    background: rgba(231, 76, 60, 0.2);
+    border: 2px solid #e74c3c;
+}
+
+.final-result.computer-winner h2 {
+    color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    button {
+        margin: 5px;
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+    
+    .round-result, .final-result {
+        margin: 15px;
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+}
