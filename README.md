@@ -23,6 +23,11 @@ The game features a **sleek dark theme UI** with interactive buttons, dynamic re
 
 [Click here to play the game](https://piyushb-27.github.io/rock-paper-scissors/)
 
+## 📸 Screenshot
+
+![Rock Paper Scissors Game](./images/game-screenshot-1.png)
+![Rock Paper Scissors Game](./images/game-screenshot-2.png)
+
 ---
 
 ## 🧠 Concepts Used
